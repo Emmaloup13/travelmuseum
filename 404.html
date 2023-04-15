@@ -1,24 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="icon" href="/travelmuseum/favicon.ico">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title>Travel Museum</title>
     <link type="text/css" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
         integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
-    <script type="text/javascript" src=" https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    <script type="text/javascript" src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
         integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
-    <script type="text/javascript" defer=" defer" src="/travelmuseum/js/chunk-vendors.2a07ebc2.js"></script>
-    <script type="text/javascript" defer=" defer" src="/travelmuseum/js/app.8ca1b150.js"></script>
-    <link type="text/css" href="/travelmuseum/css/app.93e157ef.css">
 </head>
 
-<body><noscript><strong>We're sorry but front doesn't work properly without JavaScript enabled. Please enable it to
-            continue.</strong></noscript>
+<body>
+    <noscript>
+        <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+                Please enable it to continue.</strong>
+    </noscript>
     <div id="app"></div>
+    <!-- built files will be auto injected -->
 </body>
 
 </html>
