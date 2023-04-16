@@ -32,4 +32,8 @@ export default {
 #home_container {
     text-align: center;
 }
+
+#map_container {
+    margin-top: 5%;
+}
 </style>

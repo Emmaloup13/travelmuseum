@@ -1,3 +1,3 @@
 <template>
-    <p>Coucou</p>
+    <p>{{ $route.params.region }}</p>
 </template>
