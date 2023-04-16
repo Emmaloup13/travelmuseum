@@ -37,7 +37,7 @@ export default {
     mounted() {
         this.data = getData.findMuseumsByRegion(this.region);
         this.data.forEach(musee => {
-            if (musee.autnom == null) {
+            if (musee.autnom == null && musee.nomoff != null) {
                 this.liste_musees.push({ nom: musee.nomoff.replace(musee.nomoff[0], musee.nomoff[0].toUpperCase()), ville: musee.ville_m, id: musee.ref })
             }
             else {
