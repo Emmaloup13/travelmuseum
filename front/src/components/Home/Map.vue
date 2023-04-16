@@ -69,7 +69,7 @@ export default {
 
 <style>
 #map {
-    height: 80vh;
+    height: 70vh;
     width: 90vw;
     display: inline-block;
 }
