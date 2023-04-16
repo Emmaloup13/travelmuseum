@@ -34,6 +34,6 @@ export default {
 }
 
 #map_container {
-    margin-top: 5%;
+    margin-top: 2%;
 }
 </style>

@@ -5,20 +5,14 @@
 </template>
 
 <script>
-
-import getData from '@/functions/getMuseumData.js';
 import { store } from '../../functions/store';
 
 export default {
     name: "MyHome",
     data() {
         return {
-            data: {},
             store,
         }
-    },
-    mounted() {
-        this.data = getData.findAll();
     },
     computed: {
         regionName() {
