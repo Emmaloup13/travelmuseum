@@ -1,5 +1,5 @@
 <template>
-    <div id="map">
+    <div id="map" class="card">
     </div>
 </template>
 
@@ -72,6 +72,5 @@ export default {
     height: 80vh;
     width: 90vw;
     display: inline-block;
-    border: solid black;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
     <div id="home">
-        <p v-if="click">Vous avez cliqué sur {{ regionName }} !</p>
+        <a v-if="click" :href="pageRegion">Voir les musées de {{ regionName }} !</a>
     </div>
 </template>
 
@@ -31,6 +31,9 @@ export default {
             else {
                 return false;
             }
+        },
+        pageRegion() {
+            return "/musees/" + this.regionName;
         }
     },
     methods: {
@@ -41,4 +44,8 @@ export default {
 </script>
 
 
-<style></style>
+<style>
+a {
+    text-decoration: none;
+}
+</style>
