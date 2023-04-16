@@ -1,10 +1,11 @@
 <template>
     <div id="home">
-        <a id="lien" v-if="click" :href="pageRegion">Voir les musées de {{ regionName }} !</a>
+        <a id="lien" v-if="click" :href="pageRegion">Voir les musées {{ determinant }} {{ regionName }} !</a>
     </div>
 </template>
 
 <script>
+import getData from '@/functions/getMuseumData';
 import { store } from '../../functions/store';
 
 export default {
@@ -27,7 +28,11 @@ export default {
             }
         },
         pageRegion() {
+            getData.findRegions()
             return "/musees/" + this.regionName;
+        },
+        determinant() {
+            return JSON.parse(JSON.stringify(this.store.liste_pro[this.regionName]));
         }
     },
     methods: {

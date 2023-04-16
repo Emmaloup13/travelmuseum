@@ -1,6 +1,6 @@
 <template>
     <div id="musees">
-        <h4>Les musées de {{ region }}</h4>
+        <h4>Les musées {{ regionName }}</h4>
         <table class="table table-hover">
             <thead>
                 <tr class="table-info">
@@ -48,6 +48,9 @@ export default {
     computed: {
         pageMusee() {
             return "/musees/" + this.region + "/" + this.current_museum_id;
+        },
+        regionName() {
+            return JSON.parse(JSON.stringify(this.store.liste_pro[this.region])) + " " + this.region;
         }
     },
     methods: {
