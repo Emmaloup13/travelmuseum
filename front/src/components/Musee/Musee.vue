@@ -6,7 +6,7 @@
                 <h5 class="card-title">{{ musee.adresse }}, {{ musee.cp }} {{ musee.ville }}</h5>
                 <h6 class="card-subtitle text-muted">{{ musee.tel }}</h6>
             </div>
-            <div class="card-body" id="domaines">
+            <div class="card-body" id="domaines" v-if="musee.domaines != null">
                 <h5 class="card-title">Domaines</h5>
                 <span class="badge rounded-pill bg-info" v-for="domaine in musee.domaines" :key="domaine">{{ domaine
                 }}</span>
