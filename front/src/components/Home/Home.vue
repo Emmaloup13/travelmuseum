@@ -1,6 +1,6 @@
 <template>
     <div id="home">
-        <a v-if="click" :href="pageRegion">Voir les musées de {{ regionName }} !</a>
+        <a id="lien" v-if="click" :href="pageRegion">Voir les musées de {{ regionName }} !</a>
     </div>
 </template>
 
@@ -45,7 +45,7 @@ export default {
 
 
 <style>
-a {
+#lien {
     text-decoration: none;
 }
 </style>
